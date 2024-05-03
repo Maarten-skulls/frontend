@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-image": "url('/assets/images/dinosaur-hero.jpg')"
       },
     },
     colors: {
       'bg-color': '#1C1818',
+      'white': '#FFFFFF',
+      'black': '#000000'
     }
   },
   plugins: [],
