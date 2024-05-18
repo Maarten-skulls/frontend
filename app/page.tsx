@@ -1,14 +1,10 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/hero/Hero";
+import Navbar from "@/components/Navbar";
+import Header from "@/components/organisms/header/Header";
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <div>
-        <h1>Test</h1>
-      </div>
+        <Header/>
     </div>
   );
 }

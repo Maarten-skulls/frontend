@@ -13,9 +13,10 @@ const config: Config = {
       },
     },
     colors: {
-      'bg-color': '#1C1818',
+      'bg': '#1C1818',
+      'primary': '#D9D9D9',
+      'black': '#000000',
       'white': '#FFFFFF',
-      'black': '#000000'
     }
   },
   plugins: [],
