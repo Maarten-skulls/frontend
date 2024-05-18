@@ -1,10 +1,14 @@
 import React from 'react';
 import Link from "@/components/atoms/link/Link";
+import Button from "@/components/atoms/button/Button";
 
 const Header = () => {
     return (
-        <header className='p-10 z-10 bg-transparent fixed w-full'>
-            <nav className='flex content-center justify-center items-center'>
+        <header className='p-10 bg-transparent flex justify-evenly items-center w-full'>
+            <div>
+                Logo
+            </div>
+            <nav className='flex content-center items-center'>
                 <ul className='flex gap-16'>
                     <Link href={'/test'} children={'Menu Item 1'}/>
                     <Link href={'/test'} children={'Menu Item 2'}/>
@@ -12,6 +16,9 @@ const Header = () => {
                     <Link href={'/test'} children={'Menu Item 4'}/>
                 </ul>
             </nav>
+            <div>
+                <Button variant='filled' disabled={false} children='Contact Me'/>
+            </div>
         </header>
     );
 };

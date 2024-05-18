@@ -3,7 +3,7 @@ import {ButtonProps} from "@/components/atoms/button/ButtonProps";
 
 const Button = (props: ButtonProps) => {
     const variantClassNames: {[key: string]: string} = {
-        filled: 'bg-primary textfield-bg',
+        filled: 'bg-primary text-bg',
         outlined: 'border border-slate-200 textfield-white'
     };
 
