@@ -2,7 +2,6 @@ import React from 'react';
 import {HeroProps} from "@/components/organisms/hero/HeroProps";
 import Title from "@/components/atoms/title/Title";
 import TextField from "@/components/atoms/textfield/TextField";
-import Image from "next/image";
 
 const Hero = (props: HeroProps) => {
     return (
@@ -10,7 +9,7 @@ const Hero = (props: HeroProps) => {
             <img
                 src={props.background}
                 alt='Picture of dinosaur bones'
-                className='absolute inset-0 object-cover w-full h-full'
+                className='absolute inset-0 object-cover w-full h-lvh'
             />
             <div className="relative bg-black bg-opacity-50">
                 <div className="h-lvh">

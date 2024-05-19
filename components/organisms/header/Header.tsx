@@ -6,14 +6,14 @@ const Header = () => {
     return (
         <header className='p-10 bg-transparent flex justify-evenly items-center w-full'>
             <div>
-                Logo
+                <Link href='/' children='Logo'/>
             </div>
             <nav className='flex content-center items-center'>
                 <ul className='flex gap-16'>
-                    <Link href={'/test'} children={'Menu Item 1'}/>
-                    <Link href={'/test'} children={'Menu Item 2'}/>
-                    <Link href={'/test'} children={'Menu Item 3'}/>
-                    <Link href={'/test'} children={'Menu Item 4'}/>
+                    <Link href='/test' children='Menu Item 1'/>
+                    <Link href='/test' children='Menu Item 2'/>
+                    <Link href='/test' children='Menu Item 3'/>
+                    <Link href='/test' children='Menu Item 4'/>
                 </ul>
             </nav>
             <div>

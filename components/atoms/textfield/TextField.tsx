@@ -3,9 +3,9 @@ import {TextFieldProps} from "@/components/atoms/textfield/TextFieldProps";
 
 const TextField = (props: TextFieldProps) => {
     return (
-        <div className={props.className}>
+        <p className={props.className}>
             {props.children}
-        </div>
+        </p>
     );
 };
 
