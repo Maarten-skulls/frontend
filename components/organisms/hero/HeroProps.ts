@@ -3,7 +3,7 @@ import React from "react";
 export interface HeroProps {
     className?: string;
     title: string;
-    text?: string;
+    description?: string;
     background: string;
     scrollAnimation?: boolean;
 }

@@ -3,7 +3,7 @@ import {TitleProps} from "@/components/atoms/title/TitleProps";
 
 const Title = (props: TitleProps) => {
     return (
-        <h1>{props.children}</h1>
+        <h1 className={props.className}>{props.children}</h1>
     );
 };
 
