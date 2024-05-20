@@ -9,7 +9,7 @@ const Header = () => {
                 <Link href='/' children='Logo'/>
             </div>
             <nav className='flex content-center items-center'>
-                <ul className='flex gap-16'>
+                <ul className='flex gap-6'>
                     <Link href='/test' children='Menu Item 1'/>
                     <Link href='/test' children='Menu Item 2'/>
                     <Link href='/test' children='Menu Item 3'/>

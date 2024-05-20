@@ -1,14 +1,15 @@
 import React from 'react';
 import SubTitle from "@/components/atoms/subtitle/SubTitle";
 import Card from "@/components/atoms/card/Card";
+import {CounterProps} from "@/components/molecules/counter/CounterProps";
 
-const Counter = () => {
+const Counter = (props: CounterProps) => {
     return (
-        <div className='w-fit text-center'>
-            <h3 className='font-mediu'>Products made</h3>
+        <div>
+            <h3 className='font-medium text-center'>{props.title}</h3>
             <Card
-                className='text-[64px] w-fit px-11 py-2 border-white border-2 rounded-full'
-                children='7'
+                className='text-[64px] border-white text-center m-auto w-24 border-2 rounded-full'
+                children={props.counter}
             />
         </div>
     );

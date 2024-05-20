@@ -37,3 +37,8 @@ p {
   font-size: 16px;
   font-family: var(--font-inter);
 }
+
+.icon-title {
+  font-family: var(--font-koulen);
+  font-size: 20px;
+}

@@ -5,7 +5,7 @@ const IconTitle = (props: IconTitleProps) => {
     return (
         <div className={`flex flex-row gap-2 ${props.className}`}>
             <div>{props.icon}</div>
-            <p>{props.title}</p>
+            <p className='icon-title'>{props.title}</p>
         </div>
     );
 };
