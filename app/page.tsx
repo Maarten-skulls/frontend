@@ -21,39 +21,39 @@ export default function Home() {
         {/*About Us -- Section*/}
         <Section gridVariant='one-column' className='px-20 py-10 h-max'>
             <Article title='About Us' description='Unveil the mysteries of the past and breathe life into history with our intricately crafted 3D models of ancient humans and prehistoric creatures. At Maarten’s 3D Modeling Studio, we merge artistry with scientific accuracy to deliver stunningly realistic representations of the human form and extinct animals, ranging from majestic saber-toothed tigers to awe-inspiring dinosaurs.' widthVariant='half-width'/>
-            <Section gridVariant='three-column'>
-                <div className="grid grid-cols-2 grid-rows-2 gap-5">
-                    <div className="col-start-1 col-end-2 row-start-1 row-end-2">
+            <Section gridVariant='three-column' className='grid-rows-2'>
+                <div className="grid gap-2 self-center">
+                    <div className="col-span-1 row-span-1 self-stretch">
                         <InfoCard
                             icon={<GiOnTarget/>}
                             title='Vission'
-                            text='To be the global leader in sustainable technology by 2030, inspiring a green revolution that harmonizes technological advancement with environmental conservation. We envision a world where every individual and organization adopts eco-friendly practices to ensure a healthier planet.'
+                            text='EcoTech Solutions innovates and delivers sustainable tech to enhance life quality and protect the environment. We reduce carbon footprints and foster a culture of environmental stewardship and social responsibility.'
                         />
                     </div>
-                    <div className="col-start-1 col-end-2 row-start-2 row-end-3">
+                    <div className="col-span-1 row-span-2 self-stretch">
                         <InfoCard
                             icon={<IoIosMegaphone/>}
                             title='Mission'
-                            text='EcoTech Solutions aims to innovate and deliver sustainable technology solutions that enhance the quality of life while preserving the environment for future generations. We are committed to reducing carbon footprints through our eco-friendly products and dedicated to fostering a culture of environmental stewardship and social responsibility.'
+                            text='EcoTech Solutions innovates and delivers sustainable tech to enhance life quality and protect the environment. We reduce carbon footprints and foster a culture of environmental stewardship and social responsibility.'
                         />
                     </div>
-                    <div className="col-start-2 col-end-3 row-start-1 row-end-3">
+                    <div className="col-span-2 row-span-3">
                         <InfoCard
                             icon={<IoDiamond/>}
                             title='Core Value'
-                            text='At EcoTech Solutions, sustainability is at the p advanced technologies that address globanmental challenges. Integrity is fundamental to our business, as we uphold the highest ethical standards, ensuring transparency, honesty, and accountability in all our interactions. Our commitment to customer focus drives us to deeply understand and meet the needs of our customers, delivering exceptional value and quality through our products and services. Collaboration is key, as we believe in the power of teamwork and actively partner with stakeholders—including customers, employees, suppliers, and communities—to achieve our shared goals. Additionally, we embrace social responsibility by engaging in initiatives that promote education, equality, and community well-being, striving to make a positive impact on society.'
+                            text='We prioritize sustainability, foster innovation, uphold integrity, focus on customers, collaborate with stakeholders, and embrace social responsibility to positively impact society.'
                         />
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-5'>
+                <div className='flex flex-col gap-5 self-center'>
                     <Counter title='Products Made' counter='7'/>
                     <Counter title='Prooducts Sold' counter='21'/>
                     <Counter title='Total Prints Made' counter='104'/>
                 </div>
 
-                <div>
-                    <Image src='/assets/images/maarten-samson.jpg' alt='Foto van Maarten Samson' className="w-full rounded-lg"/>
+                <div className='justify-self-end self-center'>
+                    <Image src='/assets/images/maarten-samson.jpg' alt='Foto van Maarten Samson' className="rounded-lg object-contain h-[500px]"/>
                 </div>
             </Section>
         </Section>
@@ -71,8 +71,8 @@ export default function Home() {
                     <Image src='/assets/images/dinosaur-hero-1.jpg' alt='Image of a dinosaur' className='object-contain w-1/3 rounded-lg'/>
                 </div>
             </div>
-            <div className='h-max'>
-                <Image src='/assets/images/dinosaur-hero-1.jpg' alt='Image of an dinosaur' className='rounded-lg object-contain'/>
+            <div className='justify-self-end self-center'>
+                <Image src='/assets/images/dinosaur-hero-1.jpg' alt='Image of an dinosaur' className='rounded-lg object-contain h-96'/>
             </div>
         </Section>
 
@@ -84,8 +84,8 @@ export default function Home() {
                     <Button variant='filled' disabled={false} children='Watch The Video of The Process'/>
                 </div>
             </div>
-            <div className='h-max'>
-                <Image src='/assets/images/dinosaur-hero-1.jpg' alt='Image of an dinosaur' className='rounded-lg object-contain'/>
+            <div className='justify-self-end self-center'>
+                <Image src='/assets/images/dinosaur-hero-1.jpg' alt='Image of an dinosaur' className='rounded-lg object-contain h-96'/>
             </div>
         </Section>
     </div>

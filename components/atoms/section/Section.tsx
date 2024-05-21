@@ -7,7 +7,7 @@ const Section = (props: SectionProps) => {
     const gridClassNames: {[key: string]: string} = {
         'one-column': 'grid grid-cols-1',
         'two-column': 'grid grid-cols-2',
-        'three-column': 'grid grid-cols-3',
+        'three-column': 'grid grid-cols-3 grid-auto-rows',
     };
 
     const gridClassName = gridClassNames[props.gridVariant] || gridClassNames['one-column'];

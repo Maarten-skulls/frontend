@@ -4,7 +4,7 @@ import Button from "@/components/atoms/button/Button";
 
 const Header = () => {
     return (
-        <header className='p-10 bg-transparent flex justify-evenly items-center w-full'>
+        <header className='p-10 bg-transparent flex justify-evenly items-center w-full absolute top-0 left-0 z-10'>
             <div>
                 <Link href='/' children='Logo'/>
             </div>
