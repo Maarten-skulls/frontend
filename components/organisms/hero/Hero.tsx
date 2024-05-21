@@ -20,6 +20,7 @@ const Hero = (props: HeroProps) => {
                     </div>
                 </div>
             </div>
+            <div className="icon-scroll absolute bottom"></div>
         </div>
     );
 };

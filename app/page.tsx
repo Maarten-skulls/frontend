@@ -79,7 +79,7 @@ export default function Home() {
         {/*How The Products Are Made -- Section*/}
         <Section gridVariant='two-column' className='px-20 py-10'>
             <div>
-                <Article title='Our Products' description='Unveil the mysteries of the past and breathe life into history with our intricately crafted 3D models of ancient humans and prehistoric creatures. At Maarten’s 3D Modeling Studio, we merge artistry with scientific accuracy to deliver stunningly realistic representations of the human form and extinct animals, ranging from majestic saber-toothed tigers to awe-inspiring dinosaurs.' widthVariant='full-width'/>
+                <Article title='How the products are made' description='Unveil the mysteries of the past and breathe life into history with our intricately crafted 3D models of ancient humans and prehistoric creatures. At Maarten’s 3D Modeling Studio, we merge artistry with scientific accuracy to deliver stunningly realistic representations of the human form and extinct animals, ranging from majestic saber-toothed tigers to awe-inspiring dinosaurs.' widthVariant='full-width'/>
                 <div className='flex flex-row gap-5 mt-12'>
                     <Button variant='filled' disabled={false} children='Watch The Video of The Process'/>
                 </div>
