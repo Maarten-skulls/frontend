@@ -1,8 +1,7 @@
 import React from "react";
 
-export type ButtonVariant = "filled" | "outlined";
 export interface ButtonProps {
-    variant: ButtonVariant,
+    variant: "filled" | "outlined",
     onClick?: Function,
     children: React.ReactNode,
     className?: string,
