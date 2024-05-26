@@ -1,7 +1,17 @@
-export interface MenuItem {
-    id: number;
-    __component: 'menu.menu-link' | 'menu.menu-button';
-    title: string;
-    slug: string;
-    type: 'filled' | 'outlined';
+export interface HeaderProps {
+    links: {
+        id: number;
+        slug: string;
+        title: string
+    }[];
+    logo: {
+        url: string;
+        alternativeText: string;
+    };
+    buttons: {
+        id: number;
+        slug: string;
+        title: string
+        type: "filled" | "outlined";
+    }[];
 }

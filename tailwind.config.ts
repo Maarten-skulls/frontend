@@ -13,7 +13,7 @@ const config: Config = {
       },
     },
     colors: {
-      'bg': '#1C1818',
+      'bg': '#181818',
       'primary': '#D9D9D9',
       'black': '#000000',
       'white': '#FFFFFF',

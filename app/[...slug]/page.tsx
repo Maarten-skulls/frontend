@@ -33,7 +33,6 @@ export default async function PageRoute({params}: Props) {
         return null;
     }
 
-    // console.log(page.data[0].attributes.blocks[0].image.data.attributes.url);
     const contentSections = page.data[0].attributes.blocks;
     return contentSections.map((section: any, index: number) => blocksRenderer(section, index));
 }
