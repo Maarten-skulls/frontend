@@ -49,7 +49,7 @@ p {
     font-style: normal;
 }
 
-header {
+header, footer {
     font-family: "Koulen", sans-serif !important;
 }
 
