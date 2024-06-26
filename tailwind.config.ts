@@ -7,17 +7,24 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "hero-image": "url('/assets/images/dinosaur-hero.jpg')"
-      },
-    },
     colors: {
-      'bg': '#181818',
-      'primary': '#D9D9D9',
-      'black': '#000000',
-      'white': '#FFFFFF',
-    }
+      'surface': '#241F19',
+      'primary': '#241F19',
+      'secondary': '#E27022',
+      'textColor': '#FFFFFF',
+      'transparent': 'transparent',
+    },
+    container: {
+      center: true,
+      screens: {
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
+      padding: '2rem'
+    },
   },
   plugins: [],
 };

@@ -1,21 +1,26 @@
-import {blocksRenderer} from "@/app/[...slug]/utils/blocks-renderer";
-import {getPageBySlug} from "@/app/[...slug]/utils/get-page-by-slug";
+import {getPageBySlug} from "@/app/utils/get-page-by-slug";
+import TemplatePage from "@/app/components/template/Page/TemplatePage";
 
 
-export default async function RootRoute() {
+async function Page() {
     try {
-        const page = await getPageBySlug('homepage')
-        if (page.error && page.error.status == 401)
-            throw new Error(
-                'Missing or invalid credentials. Have you created an access token using the Strapi admin panel? http://localhost:1337/admin/'
-            )
+        const page = await getPageBySlug('homepage');
 
-        if (page.data.length === 0) return null
-        const contentSections = page.data[0].attributes.blocks;
-        return contentSections.map((section: any, index: number) =>
-            blocksRenderer(section, index)
-        )
+        if (page.error && page.error.status == 401) {
+            console.log("Error");
+        }
+
+        if (page.data.length == 0) {
+            return null;
+        }
+
+        const sections = page.data[0].attributes.section;
+
+        return <TemplatePage data={{sections}} />
+
     } catch (error: any) {
-        window.alert('Missing or invalid credentials')
+        console.error(error);
     }
 }
+
+export default Page;

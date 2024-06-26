@@ -5,59 +5,41 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --background-color: #181818;
-  --text-color: #FFFFFF;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+@layer base {
+    body {
+        @apply bg-surface;
+        @apply text-base;
+        @apply text-textColor;
+    }
 }
 
 h1 {
-    font-size: 48px;
-    font-family: "Koulen", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    @apply text-2xl font-bold md:text-4xl ;
+    font-family: 'Koulen', sans-serif;
 }
 
 h2 {
-    font-size: 32px;
-    font-family: "Koulen", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    @apply text-xl font-bold md:text-2xl;
+    font-family: 'Koulen', sans-serif;
 }
 
 h3 {
-    font-size: 24px;
-    font-family: "Koulen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply text-lg font-bold md:text-xl;
+    font-family: 'Koulen', sans-serif;
 }
 
-p {
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h4 {
+    @apply text-base font-bold md:text-lg;
+    font-family: 'Koulen', sans-serif;
 }
 
-header, footer {
-    font-family: "Koulen", sans-serif !important;
+h5 {
+    @apply font-semibold;
+    font-family: 'Koulen', sans-serif;
 }
 
-.icon-title {
-    font-size: 20px;
-    font-family: "Koulen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+a {
+    @apply cursor-pointer;
 }
 
 .icon-scroll,
