@@ -14,7 +14,7 @@ const AtomButton = ({data, className = ''}: { data: AtomButtonData, className?: 
                 className = "text-textColor bg-secondary";
                 break;
             case ButtonVariant.Outlined:
-                className = "text-textColor bg-transparent border-2 border-secondary";
+                className = "text-textColor bg-onSurface border-2 border-secondary";
                 break;
             default:
                 className = "text-textColor bg-secondary";
@@ -29,14 +29,14 @@ const AtomButton = ({data, className = ''}: { data: AtomButtonData, className?: 
         data.link ?
             <AtomLink data={data.link} onClick={data.onClickHandler ? data.onClickHandler : undefined} className={buttonClassName}>
                 <>
-                    {/*{data.icon && <AtomIcon data={data.icon} />}*/}
                     {data.text && <span>{data.text}</span>}
+                    {data.icon && <AtomIcon data={data.icon} />}
                 </>
             </AtomLink>
             :
             <button onClick={data.onClickHandler} className={buttonClassName}>
-                {/*{data.icon && <AtomIcon data={data.icon} />}*/}
                 {data.text && <span>{data.text}</span>}
+                {data.icon && <AtomIcon data={data.icon} />}
             </button>
     );
 };

@@ -14,27 +14,27 @@
 }
 
 h1 {
-    @apply text-2xl font-bold md:text-4xl ;
+    @apply text-2xl font-bold tracking-wider md:text-4xl ;
     font-family: 'Koulen', sans-serif;
 }
 
 h2 {
-    @apply text-xl font-bold md:text-2xl;
+    @apply text-xl font-bold tracking-wider md:text-2xl;
     font-family: 'Koulen', sans-serif;
 }
 
 h3 {
-    @apply text-lg font-bold md:text-xl;
+    @apply text-lg font-bold tracking-wider md:text-xl;
     font-family: 'Koulen', sans-serif;
 }
 
 h4 {
-    @apply text-base font-bold md:text-lg;
+    @apply text-base font-bold tracking-wider md:text-lg;
     font-family: 'Koulen', sans-serif;
 }
 
 h5 {
-    @apply font-semibold;
+    @apply font-semibold tracking-wider;
     font-family: 'Koulen', sans-serif;
 }
 
@@ -62,7 +62,7 @@ a {
     content: '';
     width: 8px;
     height: 8px;
-    background: #fff;
+    background: #E27022;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;

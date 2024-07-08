@@ -4,7 +4,15 @@ const nextConfig = {
         fetches: {
             fullUrl: true,
         }
-    }
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+            }
+        ]
+    },
 };
 
 export default nextConfig;

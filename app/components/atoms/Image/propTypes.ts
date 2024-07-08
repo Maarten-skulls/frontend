@@ -1,6 +1,10 @@
 export type AtomImageData = {
-    height: number;
-    width: number;
-    alternativeText: string;
-    url: string;
+    data: {
+        attributes: {
+            height: number;
+            width: number;
+            alternativeText: string;
+            url: string;
+        }
+    }
 }

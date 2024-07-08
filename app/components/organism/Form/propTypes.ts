@@ -1,11 +1,11 @@
 import {AtomTitleData} from "@/app/components/atoms/Title/propTypes";
 import {AtomParagraphData} from "@/app/components/atoms/Paragraph/propTypes";
-import {AtomImageData} from "@/app/components/atoms/Image/propTypes";
+import {MoleculeInputData} from "@/app/components/molecules/InputField/propTypes";
 import {AtomButtonData} from "@/app/components/atoms/Button/propTypes";
 
-export type OrganismHeroData = {
+export type OrganismFormData = {
     title: AtomTitleData;
     description: AtomParagraphData;
-    background: AtomImageData;
-    button?: AtomButtonData[];
+    inputFields: MoleculeInputData[];
+    button: AtomButtonData;
 }

@@ -5,10 +5,10 @@ import Image from "next/image";
 const AtomImage = ({data, className, isPriority=false}: { data: AtomImageData, className?: string, isPriority?: boolean}) => {
     return (
         <Image
-            src={data.url}
-            alt={data.alternativeText}
-            height={data.height}
-            width={data.width}
+            src={data.data?.attributes?.url}
+            alt={data.data?.attributes?.alternativeText}
+            height={data.data?.attributes?.height}
+            width={data.data?.attributes?.width}
             className={className}
             priority={isPriority}
         />

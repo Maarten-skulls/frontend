@@ -8,10 +8,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'surface': '#241F19',
+      'surface': '#1C1818',
+      'onSurface': '#2F2A24',
       'primary': '#241F19',
       'secondary': '#E27022',
       'textColor': '#FFFFFF',
+      'blackColor': '#000000',
       'transparent': 'transparent',
     },
     container: {
@@ -23,7 +25,6 @@ const config: Config = {
         xl: '1280px',
         '2xl': '1536px',
       },
-      padding: '2rem'
     },
   },
   plugins: [],
