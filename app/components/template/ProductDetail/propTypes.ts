@@ -1,6 +1,7 @@
-import {AtomImageData} from "@/app/components/atoms/Image/propTypes";
+import {MoleculeImageCarouselData} from "@/app/components/molecules/ImageCarousel/propTypes";
 
 export type TemplateProductDetailData = {
+    id: string;
     title: string;
     description: string;
     price: number;
@@ -9,5 +10,13 @@ export type TemplateProductDetailData = {
     weight: number;
     material: string;
     dimensions: string;
-    image: AtomImageData;
+    image: {
+        data: {
+            attributes: {
+                url: string;
+            }
+        }
+    };
+    imageCarousel: MoleculeImageCarouselData;
+    price_id: string;
 }

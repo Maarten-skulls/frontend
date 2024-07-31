@@ -1,5 +1,6 @@
 import {getPageBySlug} from "@/app/utils/get-page-by-slug";
 import TemplatePage from "@/app/components/template/Page/TemplatePage";
+import PageNotFound from "@/app/page-not-found";
 
 
 async function Page() {
@@ -7,11 +8,12 @@ async function Page() {
         const page = await getPageBySlug('homepage');
 
         if (page.error && page.error.status == 401) {
-            console.log("Error");
+            console.log("error");
         }
 
         if (page.data.length == 0) {
-            return null;
+            console.log("Pagina niet gevonden!")
+            return <PageNotFound/>;
         }
 
         const sections = page.data[0].attributes.section;

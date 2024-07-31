@@ -10,6 +10,9 @@
         @apply bg-surface;
         @apply text-base;
         @apply text-textColor;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 }
 

@@ -14,6 +14,7 @@ const config: Config = {
       'secondary': '#E27022',
       'textColor': '#FFFFFF',
       'blackColor': '#000000',
+      'succesColor': '#4BB543',
       'transparent': 'transparent',
     },
     container: {

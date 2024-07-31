@@ -2,6 +2,7 @@ import {Metadata} from "next";
 import {getPageBySlug} from "@/app/utils/get-page-by-slug";
 import {FALLBACK_SEO} from "@/app/utils/constants";
 import TemplatePage from "@/app/components/template/Page/TemplatePage";
+import PageNotFound from "@/app/page-not-found";
 
 type Props = {
     params: {
@@ -28,8 +29,8 @@ export default async function PageRoute({params}: Props){
     const page = await getPageBySlug(params.slug);
 
     if (page.data.length == 0) {
-        console.log("error")
-        return null;
+        console.log("Pagina niet gevonden!");
+        return <PageNotFound/>
     }
 
     const sections = page.data[0].attributes.section;

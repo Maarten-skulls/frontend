@@ -9,7 +9,7 @@ const OrganismFaq = ({data}: { data: OrganismFaqData}) => {
         <div className={"px-8 flex flex-col gap-8"}>
             <AtomTitle data={data.title}/>
             <AtomParagraph data={data.description}/>
-            <div className={"w-1/2 mx-auto"}>
+            <div className={"md:w-1/2 w-4/5 mx-auto"}>
                 {data.items && data.items.map((item, index) => (
                     <MoleculeFaqItem data={{...item}} key={index}/>
                 ))}

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {MoleculeInputData} from "@/app/components/molecules/InputField/propTypes";
 import {InputType} from "@/app/components/commonEnums";
 
-const MoleculeInput = ({data}: { data: MoleculeInputData}) => {
+const MoleculeInput = ({data, handleChange}: { data: MoleculeInputData, handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void}) => {
+    const [inputValue, setInputValue] = useState<string>("");
     function Type() {
         let type: string;
 
@@ -22,14 +23,28 @@ const MoleculeInput = ({data}: { data: MoleculeInputData}) => {
         return type;
     }
     return (
-        <div className={"flex flex-col gap-2 w-96 mx-auto mb-6"}>
-            <label className={"text-left"}>
+        <div className={"flex flex-col gap-2 sm:w-96 w-72 mx-auto mb-6"}>
+            <label className={"text-left"} htmlFor={data.label}>
                 {data.label}
             </label>
             {data.type === "Textbox" ? (
-                <textarea className={"p-2 bg-onSurface rounded-md"} rows={6}></textarea>
+                <textarea
+                    className={"p-2 bg-onSurface rounded-md"}
+                    rows={6} name={data.label}
+                    onChange={(e) => {
+                        setInputValue(e.target.value);
+                        handleChange(e);
+                    }}
+                ></textarea>
                 ) :
-                <input type={Type()} className={"p-2 bg-onSurface rounded-md"}/>
+                <input
+                    type={Type()}
+                    className={"p-2 bg-onSurface rounded-md"}
+                    name={data.label}
+                    onChange={(e) => {
+                        setInputValue(e.target.value);
+                        handleChange(e);
+                    }}/>
             }
         </div>
     );

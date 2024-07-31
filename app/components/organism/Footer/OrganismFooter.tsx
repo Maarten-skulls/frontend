@@ -9,8 +9,8 @@ const OrganismFooter = ({data}: { data: OrganismFooterData }) => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className={"px-8 container mt-20 flex flex-col w-full"}>
-            <div className={"flex w-full justify-between py-4 border-y border-onSurface"}>
+        <footer className={"px-8 relative pt-8 mt-auto flex flex-col w-full"}>
+            <div className={"flex sm:flex-row flex-col-reverse w-full justify-between md:gap-0 gap-8 py-10 border-y border-onSurface"}>
                 <div className={"flex flex-col gap-4"}>
                     <AtomTitle data={data.title}/>
                     <AtomParagraph data={data.quote} className={"italic"}/>
@@ -35,7 +35,7 @@ const OrganismFooter = ({data}: { data: OrganismFooterData }) => {
                     ))}
                 </div>
             </div>
-            <div className={"flex flex-row justify-between py-4"}>
+            <div className={"flex sm:flex-row flex-col sm:gap-0 gap-2 justify-between py-4"}>
                 <div>© {currentYear} <span className={"text-secondary"}>FossilRelics.</span> Alle rechten gereserveerd</div>
                 <div>Powered by <a className={"text-secondary"} target={"_blank"} href={"https://www.linkedin.com/in/jasper-samson-699a8a261/"}>Jasper Samson</a></div>
             </div>

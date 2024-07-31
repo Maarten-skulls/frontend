@@ -8,6 +8,8 @@ import OrganismPageHeader from "@/app/components/organism/PageHeader/OrganismPag
 import OrganismFaq from "@/app/components/organism/Faq/OrganismFaq";
 import OrganismProductList from "@/app/components/organism/ProductList/OrganismProductList";
 import OrganismForm from "@/app/components/organism/Form/OrganismForm";
+import MoleculeTextBlock from "@/app/components/molecules/TextBlock/MoleculeTextBlock";
+import OrganismBlog from "@/app/components/organism/Blog/OrganismBlog";
 
 function OrganismSection({data}: { data: OrganismSectionData }) {
     function getSectionComponent(name: string): React.JSX.Element {
@@ -26,6 +28,8 @@ function OrganismSection({data}: { data: OrganismSectionData }) {
                 return <OrganismProductList data={data}/>
             case 'section.form':
                 return <OrganismForm data={data}/>
+            case 'section.blog':
+                return <OrganismBlog data={data}/>
             default:
                 return <AtomParagraph data={{text: 'Sectie wordt niet ondersteund!'}}/>
         }

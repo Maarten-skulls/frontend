@@ -13,9 +13,9 @@ const OrganismHero = ({ data }: { data: OrganismHeroData }) => {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <AtomTitle data={data.title}/>
                 <AtomParagraph data={data.description}/>
-                <div className="flex flex-row justify-center gap-5 mt-5">
+                <div className="flex md:flex-row flex-col justify-center gap-5 mt-5">
                     {data.button?.map((button, index) => (
-                        <AtomButton data={{...button}} key={index}/>
+                        <AtomButton data={{...button}} key={index} className={"md:w-fit w-full"}/>
                     ))}
                 </div>
             </div>

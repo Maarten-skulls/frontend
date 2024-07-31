@@ -3,9 +3,9 @@ import {getPageBySlug} from "@/app/utils/get-page-by-slug";
 import {FALLBACK_SEO} from "@/app/utils/constants";
 import React from "react";
 import {fetchAPI} from "@/app/utils/fetch-api";
-import OrganismContent from "@/app/components/organism/Content/OrganismContent";
 import OrganismHeader from "@/app/components/organism/Header/OrganismHeader";
 import OrganismFooter from "@/app/components/organism/Footer/OrganismFooter";
+import CartProvider from "@/app/providers/cartProvider";
 
 async function getGlobal() {
     const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
@@ -26,6 +26,9 @@ export async function generateMetadata() {
     return {
         title: metadata.metaTitle,
         description: metadata.metaDescription,
+        icons: {
+            icon: "/logo.svg",
+        },
     };
 }
 
@@ -37,9 +40,11 @@ export default async function RootLayout({children}: {children: React.ReactNode;
     return (
         <html>
             <body>
-                <OrganismHeader data={headerData}/>
-                {children}
-                <OrganismFooter data={footerData}/>
+                <CartProvider>
+                    <OrganismHeader data={headerData}/>
+                    {children}
+                    <OrganismFooter data={footerData}/>
+                </CartProvider>
             </body>
         </html>
     );

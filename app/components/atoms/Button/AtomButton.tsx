@@ -27,7 +27,7 @@ const AtomButton = ({data, className = ''}: { data: AtomButtonData, className?: 
 
     return (
         data.link ?
-            <AtomLink data={data.link} onClick={data.onClickHandler ? data.onClickHandler : undefined} className={buttonClassName}>
+            <AtomLink data={data.link} onClick={data.onClickHandler} className={buttonClassName}>
                 <>
                     {data.text && <span>{data.text}</span>}
                     {data.icon && <AtomIcon data={data.icon} />}

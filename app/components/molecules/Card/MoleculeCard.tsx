@@ -42,6 +42,6 @@ function MoleculeCard({data, className}: { data: MoleculeCardData, className?: s
             <div>{getCardByVariant()}</div>
         </div>
     );
-};
+}
 
 export default MoleculeCard;
